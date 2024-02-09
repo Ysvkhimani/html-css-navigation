@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  padding: 35px 130px 10px 135px;
+  background-color: #74C69D;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.link a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+#list {
+  visibility: hidden;
+}
+
+
+
+.contact-us-container{
+  padding: 30px 130px 93px 130px;
+}
+.contact-us-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 67px;
+}
+.contact-us-content h2{
+  font-family: Crimson Text;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.contact-us-content p{
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.feedback-form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+.form{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.map{
+  display: flex;
+  flex: 1;
+}
+.map img{
+  width: 100%;
+}
+.feedback-form .form input[type=submit]{
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 12px 0px;
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.container2{
+  background-color: #74C69D;
+  padding-left: 131px;
+  padding-right: 131px;
+  padding-top: 51px;
+  padding-bottom: 49px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 135px;
+}
+.footer-icon{
+  display: flex;
+  gap:30px;
+  color: white;
+}
+.right{
+  color: white;
+}
+@media screen and (max-width: 1000px){
+  .feedback-form {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width:800px) {
+  .container{
+    padding: 30px;
+  }
+  .link {
+    gap:20px;
+  }
+  .container2{
+    flex-direction: column;
+    gap:50px;
+    padding: 30px;
+  }
+} 
+@media screen and (max-width: 600px){
+/*contact us*/
+.container{
+  padding: 0%;
+}
+.link a {
+  display: none;
+}
+
+.link img#list {
+  visibility: visible;
+}
+.contact-us-container {
+  padding: 36px 20px 59px 20px;
+}
+
+.contact-us-content {
+  margin-bottom: 45px;
+}
+
+.feedback-form {
+  flex-direction: column-reverse;
+}
+
+.form{
+ width: 100%;
+}
+
+
+}
